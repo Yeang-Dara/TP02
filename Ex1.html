@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Uploaded image</title>
+   <style>
+    .wrapper >canvas{
+        background-color: white;
+        border: 1px solid black
+    }
+    .wrapper{
+        position: absolute;
+        margin-top: 20%;
+        left:50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: gray;
+        border-top: 2px solid gray;
+        width: 520px;
+        color:white;
+    }
+    #imageLoader{
+        margin-left: 80px;
+    }
+
+   </style>
+</head>
+<body>
+<div class="wrapper">
+    
+    <canvas id="imageCanvas" width="512" height="512"></canvas>
+    <br>
+    <span>Canvas:👻 uploaded an image please!!!</span>
+    <br>
+    <input type="file" id="imageLoader" name="imageLoader"/>
+</div>
+
+<script type="text/javascript">
+    var imageLoader = document.getElementById('imageLoader');
+    imageLoader.addEventListener('change', handleImage, false);
+    var canvas = document.getElementById('imageCanvas');
+    var ctx = canvas.getContext('2d');
+
+
+function handleImage(e){
+    var reader = new FileReader();
+    reader.onload = function(event){
+        var img = new Image();
+        img.onload = function(){
+            canvas.width = img.width;
+            canvas.height = img.height;
+            ctx.drawImage(img,0,0);
+        }
+        img.src = event.target.result;
+    }
+    reader.readAsDataURL(e.target.files[0]);     
+}
+
+</script>
+</body>
+</html>

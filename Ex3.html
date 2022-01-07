@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam</title>
+    <link rel="stylesheet" href="style_ORI.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <center>
+                <video autoplay hidden></video>
+                <canvas width="600" height="480" id="canvasInput"></canvas>
+                <div class="control">
+                    <span>Canvas 👻: Please show your face here!</span>
+                    <div>
+                        <button id="start">Start</button>
+                        <button id="stop" hidden>Stop</button>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <div class="output">
+            <span>Mini project with canvas and opencv.js</span>
+            <canvas width="600" height="480" id="canvasOutput"></canvas>
+        </div>
+    </div>
+    <script src="opencv.js" type="text/javascript"></script>
+    <script src="image_ORI.js"></script>
+</body>
+
+</html>

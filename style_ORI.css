@@ -1,0 +1,59 @@
+body{
+background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#canvasInput,
+#canvasOutput {
+    align-items: center;
+    border: 4px solid rgba(153, 153, 153, 0.7);
+    border-top: 4px solid rgba(153, 153, 153, 0.7);
+    background-color: white;
+}
+
+#canvasOutput {
+    margin-left: 17px;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.output>span {
+    background-color: rgba(153, 153, 153, 0.7);
+    height: 20px;
+    color: #fafafa;
+    padding: 5px;
+    font-size: large;
+}
+
+.control {
+    background-color: rgba(153, 153, 153, 0.7);
+    width: 620px;
+}
+
+.control>span {
+    color: #fafafa;
+}
+
+.control>div>button {
+    margin-bottom: 5px;
+    color: #fafafa;
+    border: 2px solid #fafafa;
+    border-radius: 5%;
+    margin-top: 3px;
+}
+
+#start {
+    background-color: rgba(24, 119, 242, 1);
+}
+
+#stop {
+    background-color: rgba(244, 67, 54, 0.8);
+}
