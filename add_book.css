@@ -19,7 +19,7 @@ body {
 .add>div {
     text-align: center;
     color: #ffffff;
-    background-color: rgb(255, 238, 0);
+    background-color: rgb(25, 0, 255);
     margin-bottom: 20px;
     font-size: large;
     padding-top: 10px;
@@ -40,8 +40,7 @@ body {
 
 .add input[type=text]:focus {
     border-color: dodgerBlue;
-    box-shadow: 0 0 8px 0 dodgerBlue;
-}
+    box-shadow: 0 0 8px 0   rgb(95, 144, 194); 
 
 .add .edit_book {
     visibility: hidden;
@@ -63,7 +62,7 @@ body {
 }
 
 .edit_book {
-    background-color: rgb(61, 133, 198);
+    background-color: rgb(26, 121, 204);
 }
 
 .home {
@@ -81,7 +80,7 @@ body {
 
 .home .book-info {
     padding-top: 10px;
-    background-color: aqua;
+    background-color: rgb(0, 255, 76);
     text-align: center;
     height: 35px;
     font-size: large;
